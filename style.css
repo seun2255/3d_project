@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: auto;
+}
+
+.webgl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+nav {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+nav span {
+  color: white;
+  font-weight: 700;
+  z-index: 2;
+  font-size: 20px;
+}
+
+nav ul {
+  color: white;
+  z-index: 2;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 20px;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 75%;
+  z-index: 2;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    gap: 1rem;
+  }
+}
